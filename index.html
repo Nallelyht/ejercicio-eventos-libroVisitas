@@ -6,14 +6,27 @@
   </head>
   <body>
       <h1 align="center"><font face="verdana"> Libro de Visitas</font></h1>
-      <center>
-        <input type="button" name="texto-grande" value="Texto Grande"/>
-        <input type="button" name="texto-mediano" value="Texto Mediano"/>
-        <input type="button" name="texto-chico" value="Texto Chico"/>
-        <input type="button" name="color-texto" value="Color Texto"/>
-        <input type="button" name="color-texto" value="Color Texto"/>
-
-        <br><textarea rows="10" cols="80" name="comentario"></textarea>
-      </center>
+      <div id="demo">
+          <p > </p>
+      </div>
+          <center>
+            <div id="textoAgregado"> </div>
+            <input type="button" name="texto-grande" value="Texto Grande" onclick="textoGrande()"/>
+            <input type="button" name="texto-mediano" value="Texto Mediano" onclick="textoMediano()"/>
+            <input type="button" name="texto-chico" value="Texto Chico" onclick="textoChico()"/>
+            <input type="button" name="color-texto" value="Color Texto" onclick="colorTexto()"/>
+            <input type="button" name="color-fondo" value="Color Fondo" onclick="colorFondo()"/>
+            <input type="button" name="alinear-izquierda" value="Alinear Izquierda" onclick="textoIzq()"/>
+            <input type="button" name="alinear-derecha" value="Alinear Derecha" onclick="textoDer()"/>
+            <input type="button" name="centrar" value="Centrar" onclick="textoCen()"/>
+            <input type="button" name="imagen" value="Imagen" onclick="url()"/>
+            <br>
+            <textarea rows="15" cols="110" name="comentario" id='nuevoComentario' oninput="vistaPrevia()"></textarea><br>
+            <p id="demo2"></p>
+            <input type="button" name="enviar" value="Enviar" onclick="agregarComentario();return false">
+            <input type="button" name="limpiar" value="limpiar" onclick="borrar();return false">
+          </center>
+      
   </body>
+  <script type="text/javascript" src="assets/js/js.js"></script>
 </html>
