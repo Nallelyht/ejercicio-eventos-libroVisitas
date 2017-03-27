@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <title>Libro de Visitas</title>
   </head>
-  <body>
-      <h1 align="center"><font face="verdana"> Libro de Visitas</font></h1>
-      <div id="demo">
-          <p > </p>
-      </div>
+  <body bgcolor = "#C9E1FC">
+    <h1 align="center"><font face="verdana"> Libro de Visitas</font></h1>
+      <!--nuevos comentarios dentro de div/demo -->
+    <div id="demo">
+        <hr>
+          <p style="font-size: 50px; color: rgb(238, 13, 13);">Hola Mundo </p>
+        <hr>
+          <p style="font-size: medium; color: rgb(6, 85, 175); text-aling: center">Nueva Historia</p>
+        <hr>
+        <!--div con los botones de estilo y el textarea-->
+    </div>
           <center>
             <div id="textoAgregado"> </div>
             <input type="button" name="texto-grande" value="Texto Grande" onclick="textoGrande()"/>
@@ -22,11 +28,15 @@
             <input type="button" name="imagen" value="Imagen" onclick="url()"/>
             <br>
             <textarea rows="15" cols="110" name="comentario" id='nuevoComentario' oninput="vistaPrevia()"></textarea><br>
-            <p id="demo2"></p>
+              <!-- div donde estara la vista preliminar-->
+            <div id="demo2">
+               
+            </div>
+            <!-- botones para enviar los comentarios nuevo, limpiar el textarea y la vista previa-->
             <input type="button" name="enviar" value="Enviar" onclick="agregarComentario();return false">
             <input type="button" name="limpiar" value="limpiar" onclick="borrar();return false">
           </center>
-      
+      <script type="text/javascript" src="assets/js/js.js"></script>
   </body>
-  <script type="text/javascript" src="assets/js/js.js"></script>
+  
 </html>
